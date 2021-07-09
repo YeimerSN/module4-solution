@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html ng-app = 'MenuApp'>
+<head>
+    <meta charset="utf-8">
+    <title>Menu Items</title>
+</head>
+<body>
+    <h1>Welcome to our Restaurant</h1>
 
+    <ui-view></ui-view>
+
+    <!-- Libreries -->
+    <script src = "lib/angular.min.js"></script>
+    <script src = "lib/angular-ui-router.min.js"></script>
+    
+    <!-- Module -->
+    <script src="src/restaurant/restaurantMenu.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- Categories -->
+    <script src="src/categories.component.js"></script>
+    <script src="src/items.component.js"></script>
+
+    <!-- Dependency -->
+    <script src="src/restaurant/data.module.js"></script>
+
+    <!-- Service -->
+    <script src="src/restaurant/menudata.service.js"></script>
+
+    <!-- Controllers -->
+    <script src="src/controllers/categories.controller.js"></script>
+    <script src="src/controllers/items.controller.js"></script>
+
+</body>
+
+</html>
